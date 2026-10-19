@@ -1,0 +1,21 @@
+---
+description: API conventions for the Shop App
+---
+
+# API Conventions
+
+- All API routes are mounted under `/api`
+- Use RESTful resource naming: `/products`, `/cart`, `/orders`
+- Use standard HTTP methods: GET, POST, DELETE
+- Request/response bodies are JSON
+- Authentication via `x-user` header (user ID)
+- Error responses: `{ "error": "message" }` with appropriate status codes
+  - 400: validation error, business rule violation
+  - 401: missing/invalid authentication
+  - 404: resource not found
+  - 500: internal server error
+- Successful responses return the resource directly (not wrapped)
+- List endpoints return arrays
+- IDs are strings (e.g., `p1`, `ord_12345_abcdef`)
+- Money values are numbers (USD, no cents integer)
+- Dates are ISO 8601 strings in JSON

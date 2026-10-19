@@ -1,0 +1,21 @@
+{
+  "name": "atomic-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Desktop workspace for AI-assisted development: agent-agnostic (ACP), persistent project memory (MCP), software-level navigation.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @atomic/desktop",
+    "build": "npm run build -w @atomic/desktop",
+    "test": "npm run test -w @atomic/core",
+    "typecheck": "npm run typecheck -w @atomic/core && npm run typecheck -w @atomic/desktop",
+    "e2e": "npm run e2e -w @atomic/desktop"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

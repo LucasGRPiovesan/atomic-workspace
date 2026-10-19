@@ -1,0 +1,51 @@
+/* Design tokens — shared by every renderer feature. Owned by Tech Lead; features consume, never redefine. */
+:root {
+  color-scheme: dark;
+  --bg-0: #0e1014;      /* window */
+  --bg-1: #14171d;      /* panels */
+  --bg-2: #1b1f27;      /* raised / cards */
+  --bg-3: #242a35;      /* hover / inputs */
+  --border: #2a303c;
+  --border-strong: #3a4252;
+  --fg-0: #e8ebf1;      /* primary text */
+  --fg-1: #b4bccb;      /* secondary */
+  --fg-2: #7d8799;      /* muted */
+  --accent: #6aa2ff;
+  --accent-soft: rgba(106, 162, 255, 0.14);
+  --ok: #4fc38a;
+  --warn: #e8b34b;
+  --danger: #ef6b6b;
+  --changed: #c58cff;   /* nodes touched by the latest change set */
+
+  /* node kinds (graph + badges) */
+  --k-capability: #6aa2ff;
+  --k-module: #8b95a8;
+  --k-flow: #45c4c4;
+  --k-rule: #e8b34b;
+  --k-entity: #4fc38a;
+  --k-integration: #ef8f5b;
+  --k-route: #b58cff;
+  --k-component: #5bb6ef;
+  --k-test_suite: #9aa36a;
+  --k-convention: #d38bbd;
+  --k-decision: #d38bbd;
+  --k-instruction: #a3a3a3;
+  --k-note: #a3a3a3;
+
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --font-ui: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Cascadia Code', 'JetBrains Mono', Consolas, ui-monospace, monospace;
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-md: 13px;
+  --fs-lg: 15px;
+  --fs-xl: 18px;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}

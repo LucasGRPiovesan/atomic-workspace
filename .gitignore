@@ -1,0 +1,14 @@
+node_modules/
+out/
+dist/
+release/
+.atomic/
+*.log
+.vite/
+coverage/
+test-results/
+playwright-report/
+fixtures/*/node_modules/
+.work/
+.vitest/
+.playwright-mcp/
